@@ -5,10 +5,11 @@ import utils.MenuNavigator;
 
 public class Addition {
     public static void sum() {
-        System.out.println(
-                "\n-------------------------------------------------------------\n" +
-                "\n==== OPERATION 1 - ADDITION ===="
-        );
+        System.out.println("""
+        
+        -------------------------------------------------------------
+        ==== OPERATION 1 - ADDITION ===
+        """);
 
         double num1 = InputHelper.readDouble("Enter the first number: ");
         double num2 = InputHelper.readDouble("Enter the second number: ");

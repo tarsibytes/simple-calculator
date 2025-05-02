@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Menu {
     public static void displayMenu() {
-        System.out.println(
-                "\n\n==== CALCULATOR ====\n" +
-                "1 - Addition\n" +
-                "2 - Subtraction\n" +
-                "3 - Multiplication\n" +
-                "4 - Division\n" +
-                "0 - Exit"
-        );
+        System.out.println("""
+        
+        
+        ==== CALCULATOR ====
+        1 - Addition
+        2 - Subtraction
+        3 - Multiplication
+        4 - Division
+        0 - Exit
+        """);
 
         Scanner operationInput = new Scanner(System.in);
-        System.out.println("\nPlease, inform which operation do you want to use: ");
+        System.out.println("Please, inform which operation do you want to use: ");
         int userInput = operationInput.nextInt();
 
         switch (userInput) {

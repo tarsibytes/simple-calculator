@@ -5,10 +5,11 @@ import utils.MenuNavigator;
 
 public class Division {
     public static void divide() {
-        System.out.println(
-                "\n-------------------------------------------------------------\n" +
-                "\n==== OPERATION 4 - DIVISION ===="
-        );
+        System.out.println("""
+        
+        -------------------------------------------------------------
+        ==== OPERATION 4 - DIVISION ===
+        """);
 
         double num1 = InputHelper.readDouble("Enter the first number: ");
         double num2 = InputHelper.readDouble("Enter the second number: ");
