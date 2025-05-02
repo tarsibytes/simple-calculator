@@ -1,7 +1,12 @@
+package operations;
+
+import utils.InputHelper;
+import utils.MenuNavigator;
+
 public class Division {
     public static void divide() {
         System.out.println(
-                "-------------------------------------------------------------" +
+                "\n-------------------------------------------------------------\n" +
                 "\n==== OPERATION 4 - DIVISION ===="
         );
 
@@ -14,6 +19,8 @@ public class Division {
         }
 
         double result = num1 / num2;
-        System.out.printf("Current division:\n%.2f / %.2f = %.2f", num1, num2, result);
+        System.out.printf("Calculation:\n%.2f / %.2f = %.2f", num1, num2, result);
+
+        MenuNavigator.askToReturn();
     }
 }

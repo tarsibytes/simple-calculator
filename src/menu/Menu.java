@@ -1,9 +1,11 @@
+package menu;
+
 import java.util.Scanner;
 
 public class Menu {
     public static void displayMenu() {
         System.out.println(
-                "==== CALCULATOR ====\n" +
+                "\n\n==== CALCULATOR ====\n" +
                 "1 - Addition\n" +
                 "2 - Subtraction\n" +
                 "3 - Multiplication\n" +
@@ -11,26 +13,28 @@ public class Menu {
                 "0 - Exit"
         );
 
-        Scanner operacaoEscolhida = new Scanner(System.in);
+        Scanner operationInput = new Scanner(System.in);
         System.out.println("\nPlease, inform which operation do you want to use: ");
-        int userInput = operacaoEscolhida.nextInt();
+        int userInput = operationInput.nextInt();
 
         switch (userInput) {
             case 1:
-                Addition.sum();
+                operations.Addition.sum();
                 break;
             case 2:
-                Subtraction.subtract();
+                operations.Subtraction.subtract();
                 break;
             case 3:
-                Multiplication.multiple();
+                operations.Multiplication.multiply();
                 break;
             case 4:
-                Division.divide();
+                operations.Division.divide();
                 break;
-            default:
+            case 0:
                 System.out.println("\n\nSee you!");
+            default:
+                System.out.println("\nInvalid option. Try again.\n");
+                Menu.displayMenu();
         }
-
     }
 }
